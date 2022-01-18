@@ -1,0 +1,15 @@
+<h2>liste palindrome : </h2>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Label</th>
+  </tr>
+  </thead>
+  <tbody>
+  <app-palindrome-item *ngFor="let m of mots |async"  [item]="m" style="display: contents">
+  </app-palindrome-item>
+
+  </tbody>
+</table>
